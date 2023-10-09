@@ -1,10 +1,14 @@
-import React from 'react'
-import { Text, View } from 'react-native'
+import React, { useContext } from 'react'
+import { Button, View } from 'react-native'
+import { AuthContext } from '../context/AuthContext'
 
 const Pagina2Screen = () => {
+  const {signIn,authState} = useContext(AuthContext)
   return (
     <View>
-      <Text>Pagina 3</Text>
+      {
+        !authState.isLoggedIn ? <Button title='SignIn' onPress={signIn}/> : <Button title='Logueado'/>
+      }
     </View>
   )
 }

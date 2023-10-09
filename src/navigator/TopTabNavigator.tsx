@@ -3,7 +3,6 @@ import Pagina1Screen from '../screen/Pagina1Screen';
 import Pagina2Screen from '../screen/Pagina2Screen';
 import Pagina3Screen from '../screen/Pagina3Screen';
 import {createMaterialTopTabNavigator} from '@react-navigation/material-top-tabs';
-import {useSafeAreaInsets} from 'react-native-safe-area-context';
 import {Text} from 'react-native';
  
 const Tab = createMaterialTopTabNavigator();
